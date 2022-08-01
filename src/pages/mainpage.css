@@ -1,0 +1,303 @@
+
+/* box01 */
+
+#box01{
+  height: 800px;
+  padding-top: 46px;
+  background: url('../images/gallery_back.png') no-repeat center bottom;
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+#box01>section{
+  position: absolute;
+  width: 800px;
+  padding: 20px 0;
+  border: 5px double #ccc;
+  text-align: center;
+  color: #666;
+  left: 50%;
+  top: 177px; margin-left: -400px;
+}
+#box01>section>h3{
+  font: 37px 'Merriweather', serif;
+  margin-bottom: 20px;
+}
+#box01>section>p{
+  font: 18px 'Sacramento', cursive;
+}
+#box01>ul{
+  width: 400%;
+  height: 100%;
+  /* background-color: #666; */
+  display: flex;
+  flex-wrap: wrap;
+}
+#box01>ul>li{
+  width: 25%;
+  height: 100%;
+  text-indent: -99999px;
+}
+#box01>ul>li:nth-child(1){
+  background: url('../images/set01.png') no-repeat center 400px;
+}
+
+#box01>ul>li:nth-child(2){
+  background-image:url('../images/set01.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#box01>ul>li>div{
+  width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+}
+#box01>ul>li:nth-child(3)>div{
+  background:url('../images/set03.png') no-repeat 0 center;
+}
+#box01>ul>li:nth-child(4)>div{
+  background:url('../images/set04.png') no-repeat right center;
+}
+
+#box01>#prev{
+  position:absolute;
+  left: 125px;
+  top: 50%;
+  margin-top: -45px;
+  font-size: 35px;
+}
+#box01>#next{
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  margin-top: -45px;
+  font-size: 35px;
+}
+#box01>p.no{
+  position: absolute;
+  left: 0; bottom: 20px;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+
+#box01>p.no>a{
+  display: inline-block;
+  width: 5px; height: 5px;
+  margin: 0 16px;
+  background-color: #ccc;
+  outline: 10px solid yellow;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+#box01>p.no>a:first-child{
+  outline: 10px solid #fff;
+}
+
+/* box02 */
+
+#box02{
+  padding: 75px 0 140px;
+}
+
+#box02>div{
+  width: 1370px;
+  margin: 0 auto;
+  /* background-color: #666; */
+} 
+#box02>div>h3{
+  font: bold 46px Times,serif;
+  color: #666;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#box02>div>p{
+  padding-right: 726px;
+  font: 23px/36px Arial, sans-serif;
+  text-align: justify;
+  background: url('../images/sec01_pic.png') no-repeat 836px top;
+}
+
+
+/* #box03 */
+#box03>h3{
+  height: 440px;
+  background-image: linear-gradient(#def6f2 10%, #bbe8e4 90%);
+}
+#box03>h3>span{
+  display: block;
+  width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  justify-content: center;
+  align-items: center;
+  background: url('../images/gifts_gifts1_bg2.png') no-repeat left bottom,
+              url('../images/gifts_gifts1_bg1.png') no-repeat right top;
+  font: bold 88px Times,serif;
+  color: #fff;
+}
+#box03>h3>span>b{
+  font-family: Arial,sans-serif;
+  color: #666;
+  padding-left: 20px;
+}
+#box03>div>div{
+  width: 1370px;
+  margin: 0 auto;
+  padding: 40px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  /* align-content: stretch; */
+}
+
+#box03>div>div>figure{
+  width: 420px;
+  background-color: #f2f2f2;
+  /* padding: 20px 0 5px; */
+  text-align: center;
+  margin-bottom: 40px;
+ 
+
+}
+
+#box03>div>div>figure:hover{
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.6),
+              3px 3px 15px rgba(18, 208, 221, 0.7) inset;
+}
+
+#box03>div>div>figure>img{
+  width: 420px;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+#box03>div>div>figure>dl>dt{
+  margin-bottom: 20px;
+}
+#box03>div>div>figure>dl>dd{
+  margin-bottom: 20px;
+}
+#box03>div>div>figure>dl>dd:nth-child(2){
+  line-height: 25px;
+}
+
+
+/* box04 */
+
+#box04>h3{
+  height: 440px;
+  background-image: linear-gradient(45deg, #f4e5ee 20%, #cac1db 80%);
+}
+#box04>h3>span{
+  /* display: block; */
+  width: 1370px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/gifts_gifts2_bg1.png') no-repeat left top,
+              url('../images/gifts_gifts2_bg2.png') no-repeat right bottom;
+  font: bold 88px Times,serif;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7),
+              -2px -2px 15px rgba(82,11,163,0.7) 
+  /* background-color: green; */
+}
+#box04>div{
+  width: 930px;
+  margin: 0 auto;
+  padding: 40px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#box04>div>figure{
+  width: 220px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #666;
+}
+#box04>div>figure:hover{
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.6),
+              3px 3px 15px rgba(82,11,163,0.7) inset;
+}
+#box04>div>figure>img{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* box05 */
+#box05{
+  background-image: linear-gradient(#f4f4f4 10%, #919191 90%);
+}
+#box05>div{
+  width: 1370px;
+  margin: 0 auto;
+  padding: 170px 0 170px 646px;
+  box-sizing: border-box;
+  background: url('../images/sec04_pic.png') no-repeat left -100px;
+  background-size: 240px;
+}
+#box05>div>section{
+  width: 460px;
+  text-align: center;
+  margin-bottom: 87px;
+  color: #666;
+}
+#box05>div>section>h3{
+  font: bold 55px Times,serif;
+  margin-bottom: 25px;
+}
+#box05>div>section>p{
+  font: 33px Times,serif;
+}
+#box05>div>form{
+  width: 460px;
+  /* background-color: #666; */
+}
+/* #box05>div>form>fieldset{} */
+#box05 form ul{}
+#box05 form ul>li{
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#box05 form ul>li>label{
+  line-height: 33px;
+}
+#box05 form ul>li>input{
+  width: 307px;
+  border: none;
+  background-color: rgba(255,255,255,0.5);
+  line-height: 33px;
+  text-indent: 20px;
+  box-sizing: border-box;
+}
+#box05 form p{
+  text-align: right;
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+#box05 form p>input{
+  width: 307px;
+  height: 34px;
+  border: none;
+  background-color: #727272;
+  color: #fff;
+  font-size: #777;
+}
