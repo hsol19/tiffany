@@ -28,10 +28,10 @@ function Header(){
     <div>
         <ul>
             <li>
-                <Link to ="/page01">COLLECTIONS</Link>
+                <Link to ="/page01">MAIN ITEMS</Link>
             </li>
             <li>
-            <Link to ="/page02">Gifts</Link>
+            <Link to ="/page02">COLLECTIONS</Link>
             </li>
             <li>
             <Link to ="/page03">Event</Link>
