@@ -19,14 +19,21 @@ setJewtp(typeValue)
 
 
 function priceFilter(e){
-  // const price = jewData.price
+  const defaultPrice = jewData
   const prValue = e.target.value
-let list
+  console.log(defaultPrice)
 console.log(prValue)
-// console.log(price)
-// return {
-//   list= jewData.sort((a,b) => a.price - b.price)
-//   setjewData(list)}
+const changePrice = ()=>{
+  if(prValue === 'sortByLowPrice'){
+    return jewData.sort((a,b) => a.price - b.price)
+  }
+  return jewData.sort((a,b) => b.price - a.price)
+}
+ setjewData(changePrice)
+ setJewtp(prValue)
+
+  // list
+
 
 }
   return(
@@ -49,6 +56,7 @@ console.log(prValue)
 
 
 function Figure({items}){
+
   return (
     <div>
       {
@@ -58,7 +66,8 @@ function Figure({items}){
             <img src={items.pic} alt={items.name}/>
             <dl>
               <dt>{items.name}</dt>
-              <dd>{items.price}</dd>
+            
+              <dd>{Number(items.price).toLocaleString('ko')}원</dd>
             </dl>
         </figure>
           )
@@ -80,28 +89,27 @@ const [order,setOrder] =useState('sortByLowPrice')
 // function typeOptionValue(selectType){
 // console.log(selectType)
 // }
-// const [priceFilter,setPriceFilter] = useState("")
-// const [orderBy,setOrderBy] = useState('asc')
+
   return(
     <>
     <article id="box03">
-    <h3><span>Whatever Shining <b>style</b></span></h3>
+      <h3><span>Whatever Shining <b>style</b></span></h3>
 
-    <div>
-    <Select 
-      jewtp={jewtp}
-      setJewtp = {setJewtp}
-      jewData ={jewData}
-      setjewData={setjewData}
-      // typeOptionValue ={typeOptionValue} 
-      />
-    </div>
+      <div>
+      <Select 
+        jewtp={jewtp}
+        setJewtp = {setJewtp}
+        jewData ={jewData}
+        setjewData={setjewData}
+        // typeOptionValue ={typeOptionValue} 
+        />
+      </div>
 
-    <div>
-      <Figure items={jewData}  />
-      
-    </div>
-</article>
+      <div>
+        <Figure items={jewData}  />
+        
+      </div>
+    </article>
     </>
   )
 }
