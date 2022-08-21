@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import DataJson from '../source/data.json'
 import './mainpage.css'
-import { GrNext,GrPrevious } from "react-icons/gr";
+
 
 function Select({jewtp,setJewtp,jewData,setjewData}){
 
@@ -83,7 +83,7 @@ const  [jewData, setjewData] = useState(DataJson)
 // 변경될 값을 넣는 state 만들기
 const [jewtp, setJewtp] = useState('bracelet')
 
-const [order,setOrder] =useState('sortByLowPrice')
+
 
 // 함수-> target value 함수 만들기
 // function typeOptionValue(selectType){

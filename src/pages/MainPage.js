@@ -1,6 +1,6 @@
 import React from 'react'
 import './mainpage.css'
-import { GrNext,GrPrevious } from "react-icons/gr";
+
 
 function Mainpage(){
   return(
@@ -20,8 +20,8 @@ function Mainpage(){
             <li><div>상품4</div></li>
         </ul>
     
-        <p id="prev"><GrPrevious/></p>
-        <p id="next"><GrNext/></p>
+        {/* <p id="prev"><GrPrevious/></p>
+        <p id="next"><GrNext/></p> */}
     
         <p className="no">
             <a href="#" className="selected">no01</a>

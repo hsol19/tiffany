@@ -59,7 +59,7 @@
   background:url('../images/set04.png') no-repeat right center;
 }
 
-#box01>#prev{
+/* #box01>#prev{
   position:absolute;
   left: 125px;
   top: 50%;
@@ -72,7 +72,7 @@
   top: 50%;
   margin-top: -45px;
   font-size: 35px;
-}
+} */
 #box01>p.no{
   position: absolute;
   left: 0; bottom: 20px;
